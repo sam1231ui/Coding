@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void updateValue(int *p){
+    *p = 610 % 255;
+}
+
+int main(){
+    char ch = 'A';
+    updateValue((int*)&ch);
+    cout << ch << endl;
+    
+    
+    int * p= new int;
+    *p = 10;
+    
+    cout<<p<<' '<<*p;
+    
+    
+    
+    
+}
